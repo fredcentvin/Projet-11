@@ -1,13 +1,17 @@
-import logo from './logo.svg';
-import '../app/App.css';
+import {Provider} from "react-redux";
+// import {store} from "./store";
+import logo from './src/logo.svg';
+import './App.css';
 
 function App() {
   return (
+    // <Provider store ={store}>
+        <Provider>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/app/App.js</code> and save to reload.
+          Edit <code>./App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -19,6 +23,8 @@ function App() {
         </a>
       </header>
     </div>
+    {/* </Provider> */}
+    </Provider>
   );
 }
 
