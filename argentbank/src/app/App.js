@@ -1,25 +1,28 @@
-import {Provider} from "react-redux";
-import {store} from "./store";
-import './App.css';
-import Header from "../container/Header";
-import Banner from "../container/Banner";
-import Footer from "../container/Footer";
 
-function App() {
+import React from "react";
+import {Routes, Route} from "react-router-dom";
+// import { useSelector } from "react-redux";
+import Header  from "../container/Header";
+import Footer from "../container/Footer";
+import Home from "../pages/Home";
+import Error from "../pages/Error.jsx";
+import Login from "../pages/Login.jsx";
+import Profile from "../pages/Profile.jsx";
+import './App.css';
+
+export default function App () {
+  // const isConnected = useSelector((state) => state.auth.isConnected);
   return (
-    
-    <Provider store ={store}>
-     
-    <div className="App">
-      <header className="App-header">
-         <Header />
-      </header>
-    </div>
-      <Banner />
-      <Footer />
-    
-     </Provider>
+  <div>
+    <Header />
+    <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="Login" element={<Login />} />
+        <Route path="Profile" element={<Profile />} />
+        <Route path="*" element={<Error />} />
+    </Routes>
+    <Footer />
+  </div>
   );
 }
 
-export default App;
