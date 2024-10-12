@@ -19,8 +19,7 @@ function Home() {
             <main>
                 <Banner />
                 <section style={{display:'flex',flexDirection:'row', gap:'40px',margin:'30px 30px 0 30px',}} >
-                    {/* <h2 className='sr-only'></h2> */}
-                    {/* Return items from json file with map */}
+                
                     {homeDatas.map((data) => (
                         /* Return item component */
                         <Item 

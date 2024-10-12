@@ -9,23 +9,23 @@ function Login(){
             
             <div style={{display:'flex',flexDirection:'column', gap:'12px', backgroundColor:'white', position:'relative', width:'240px', height:'350px', padding:'20px 30px 0 30px', marginTop:'50px'}}>
             
-                <div style={{display:'flex', color:'2c3e50', marginTop:'10px', marginBottom:'0', justifyContent:'center'}}>
+                <div style={{display:'flex', color:'#2c3e50', marginTop:'10px', marginBottom:'0', justifyContent:'center'}}>
                   
                         <i style={{fontSize:'18px', color:'#2c3e50'}} ><FontAwesomeIcon icon={faCircleUser} /></i>
                   
                 </div>
                 
-                    <p style={{fontSize:'24px',fontWeight:'500', textAlign:'center',color:'2c3e50', margin:'0 0'}}>Sign In</p>
+                    <p style={{fontSize:'24px',fontWeight:'500', textAlign:'center',color:'#2c3e50', margin:'0 0'}}>Sign In</p>
                 
-                <form id="signinEmail" style={{display:'flex'}} >
+                <form id="signinEmail" style={{display:'flex', justifyContent:'center'}} >
                     <div style={{display:'flex', flexDirection:'column', alignItems:'flexstart'}}>
-                        <label htmlFor="username" style={{color:'2c3e50', fontSize:'16px', fontWeight:'600', fontFamily:'Avenir, Helvetica, Arial, sans-serif'}} >Username</label>
+                        <label htmlFor="username" style={{color:'#2c3e50', fontSize:'16px', fontWeight:'600', fontFamily:'Avenir, Helvetica, Arial, sans-serif'}} >Username</label>
                         <input type="email" id="username" style={{ height:'30px', fontSize:'17px'}} value={''} onChange={''}/>
                     </div>
                 </form>
-                <form id="signinPassword" style={{display:'flex'}} >
+                <form id="signinPassword" style={{display:'flex', justifyContent:'center'}} >
                     <div style={{ display:'flex', flexDirection:'column', alignItems:'flexstart'}}>
-                        <label htmlFor="passwword" style={{color:'2c3e50', fontWeight:'600', fontSize:'16px', fontFamily:'Avenir, Helvetica, Arial, sans-serif'}} >Password</label>
+                        <label htmlFor="passwword" style={{color:'#2c3e50', fontWeight:'600', fontSize:'16px', fontFamily:'Avenir, Helvetica, Arial, sans-serif'}} >Password</label>
                         <input type="password" id="password" style={{ height:'30px',fontSize:'17px'}}  value={''} onChange={''}/>
                     </div>
                 </form>
