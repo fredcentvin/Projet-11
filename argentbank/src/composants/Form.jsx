@@ -4,16 +4,41 @@ import { Link } from 'react-router-dom';
 
 function loginForm(){
     return(
-        <div style={{display:'flex',flexDirection:'row', marginRight:'20px'}}>
-            <a href="../pages/Profile.jsx" style={{display:'flex', flexDirection:'row', gap:'8px', alignItems:'center'}} >
-                <Link to ="Login">
-                    <i style={{fontSize:'18px', color:'#2c3e50'}} ><FontAwesomeIcon icon={faCircleUser} /></i>
+        <div style={styles.div}>
+           
+                <Link to="Login" stye={styles.link}>
+                    <i style={styles.i} ><FontAwesomeIcon icon={faCircleUser} /></i>
                 </Link>
-                <Link to ="Profile">
-                    <p style={{fontSize:'16px', fontFamily:'Avenir, Helvetica, Arial, sans-serif', color:'#2c3e50', fontWeight:'bold'}} >Sign In</p>
+                <Link to="Profile">
+                    <p style={styles.p} >Sign In</p>
                 </Link>
-            </a>
+        
         </div>
     )
+}
+
+const styles={
+    div:{
+        display:'flex',
+        flexDirection:'row', 
+        marginRight:'20px',
+        alignItems:'center'
+    },
+    link:{
+        display:'flex',
+        flexDirection:'row',
+        alignItems: 'center',
+        gap: '8px'
+    },
+    i:{
+        fontSize:'18px', 
+        color:'#2c3e50'
+    },
+    p:{
+        fontSize:'16px', 
+        fontFamily:'Avenir, Helvetica, Arial, sans-serif', 
+        color:'#2c3e50', 
+        fontWeight:'bold'
+    }
 }
 export default loginForm

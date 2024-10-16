@@ -5,11 +5,17 @@ function Logo() {
     return(
         <div>
             <Link to="/">
-                <a href="../pages/Home.jsx">
-                <img src= {argentBankLogo} alt="logo de la banque" style={{height:'100%',marginLeft:'10px'}}></img>
-                </a>
+                
+                <img src= {argentBankLogo} alt="logo de la banque" style={styles.img}></img>
+            
             </Link>
         </div>
     )
+}
+const styles= {
+    img : {
+        height:'100%',
+        marginLeft:'10px'
+    }
 }
 export default Logo

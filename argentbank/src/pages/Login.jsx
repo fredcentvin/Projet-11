@@ -1,5 +1,4 @@
 import React from "react"
-// import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUser } from '@fortawesome/free-regular-svg-icons';
 
@@ -33,7 +32,7 @@ function Login(){
                     <div style={{display:'flex', flexDirection:'row'}}>
                         <form>
                             <div style={{display:'flex',flexDirection:'row', gap:'8px'}} >
-                                <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter"/>
+                                <input type="checkbox" id="rememberMe" name="remember" value=""/>
                                 <label htmlFor="subscribeNews">Remember me</label>
                             </div>
                             <div>

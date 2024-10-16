@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "../container/Banner"
 import homeDatas from "../datas/homeDatas.json"
-import Item from "../composants/Item"
+import ItemPromo from "../composants/ItemPromo"
 import iconChat from "../asset/icones/iconChat.webp"
 import iconMoney from "../asset/icones/iconMoney.webp"
 import iconSecurity from "../asset/icones/iconSecurity.webp"
@@ -18,11 +18,10 @@ function Home() {
         <div>
             <main>
                 <Banner />
-                <section style={{display:'flex',flexDirection:'row', gap:'40px',margin:'30px 30px 0 30px',}} >
+                <section style={styles.section} >
                 
                     {homeDatas.map((data) => (
-                        /* Return item component */
-                        <Item 
+                        <ItemPromo 
                             key={data.id}
                             image={imageData[data.image]}
                             descriptionImage={data.descriptionImage}
@@ -36,5 +35,13 @@ function Home() {
 
 )
 
+}
+const styles={
+    section:{
+        display:'flex',
+        flexDirection:'row',
+        gap:'40px',
+        margin:'30px 30px 0 30px'
+    }
 }
 export default Home
