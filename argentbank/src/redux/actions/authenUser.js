@@ -1,7 +1,7 @@
 const apiUrl ="http://localhost:3001/api/v1";
 
-const email = username
-const password = 
+const email = ""
+const password = ""
 
 
 async function AuthenUser() {
